@@ -5,7 +5,7 @@
 */
 
 .theme_light {
-  --bg-color: #f1b2ce;
+  --bg-color: #fff1f7;
   --header-title-color: #ffc2e6;
   --accent-color: #ff8dcb;
   --decoration-color: #353430;
@@ -16,6 +16,10 @@
   --button-color-active: rgba(50, 49, 45, 0.4);
   --page-title-color: #353430;
   --background-image: url(../images/cover-image-light.png);
+}
+
+.theme_light .header__decoration {
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -38,7 +42,3 @@
 }
 
 
-
-.theme_light .header__decoration {
-  display: none;
-}
