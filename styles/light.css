@@ -4,38 +4,37 @@
   переключая тему
 */
 
-.theme_light{
-  --bg-color: #F1B2CE;
-  --header-title-color: #FFC2E6;
-  --accent-color: #FF8DCB;
-  --decoration-color:#353430;
+.theme_light {
+  --bg-color: #f1b2ce;
+  --header-title-color: #ffc2e6;
+  --accent-color: #ff8dcb;
+  --decoration-color: #353430;
   --title-color: #353430;
   --text-color: #353430;
   --button-color: #353430;
-  --button-color-active: rgba(50, 49, 45, 0.4); 
+  --button-color-active: rgba(50, 49, 45, 0.4);
   --page-title-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-color: #F1B2CE;
-    --header-title-color: #FFC2E6;
-    --accent-color: #FF8DCB;
-    --decoration-color:#353430;
+    --bg-color: #f1b2ce;
+    --header-title-color: #ffc2e6;
+    --accent-color: #ff8dcb;
+    --decoration-color: #353430;
     --title-color: #353430;
     --text-color: #353430;
     --button-color: #353430;
-    --button-color-active: rgba(50, 49, 45, 0.4); 
+    --button-color-active: rgba(50, 49, 45, 0.4);
     --page-title-color: #353430;
-    }
-  .page{
+  }
+  .page {
     background-image: url(../images/cover-image-light.png);
   }
-  .header__decoration{
+  .header__decoration {
     display: none;
   }
 }
-
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.

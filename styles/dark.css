@@ -5,14 +5,14 @@
 */
 .theme_dark {
   --bg-color: #000028;
-  --header-title-color: #DB00FF;
-  --accent-color: #FF0070;
-  --decoration-color:#FF0070;
-  --page-title-color: #FF0070;;
-  --button-color: #FF0070;
-  --button-color-active: rgba(255, 112, 102, 0.4); 
+  --header-title-color: #db00ff;
+  --accent-color: #ff0070;
+  --decoration-color: #ff0070;
+  --page-title-color: #ff0070;
+  --button-color: #ff0070;
+  --button-color-active: rgba(255, 112, 102, 0.4);
   --title-color: #000028;
-  --text-color: #F1B2CE;
+  --text-color: #f1b2ce;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +20,6 @@
     background-image: url(../images/cover-image-dark.png);
   }
 }
-
 
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
@@ -30,6 +29,6 @@
   background-image: url(../images/cover-image-dark.png);
 }
 
-.theme_dark .header__decoration{
+.theme_dark .header__decoration {
   display: block;
 }
