@@ -12,6 +12,7 @@
   --page-title-color: #FF0070;
   --text-color: #F1B2CE;
   --button-color: #FF0070;
+  --button-color-active: rgba(255, 112, 102, 0.4); 
   --main-font: IBM Plex Mono;
   --font-weight-bold: 700;
   --font-weight-regular: 400;
@@ -23,10 +24,16 @@
 }
 
 
-@media (max-width: 320px){
+@media (max-width: 475px){
   :root{
     --padding-inline: 10px;
     --padding-block: 10px;
+  }
+}
+
+@media (max-width: 320px){
+  :root{
     --focus-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
+ 
 }

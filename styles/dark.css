@@ -10,6 +10,7 @@
   --decoration-color:#FF0070;
   --page-title-color: #FF0070;;
   --button-color: #FF0070;
+  --button-color-active: rgba(255, 112, 102, 0.4); 
   --title-color: #000028;
   --text-color: #F1B2CE;
 }

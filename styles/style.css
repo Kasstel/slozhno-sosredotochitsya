@@ -70,13 +70,32 @@
   min-height: 26px;
   background-color: transparent;
   text-transform: lowercase;
+  padding-block-start: 0;
   padding-block-end: 2px;
   font-size: var(--font-size);
   line-height: var(--line-height);
   font-weight: var(--font-weight-regular);
   color: var(--accent-color);
-  border: 1px solid var(--button-color);
+  border: none;
 }
+
+.header__theme-menu-button_active{
+  outline: 1px solid var(--button-color);
+  pointer-events: none;
+}
+
+.header__theme-menu-button:hover{
+  outline: 1px solid var(--button-color-active);
+}
+
+.header__theme-menu-button:focus{
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible{
+  border-block-end:  1px solid var(--button-color);
+}
+
 
 .header__title{
   margin-inline-start: -20px;
@@ -102,7 +121,7 @@
   display: block;
   position: absolute;
   top: var(--padding-inline);
-  right: clamp(38px, 18px + var(--padding-inline), 48px);
+  right: clamp(38px, 28px + var(--padding-inline), 48px);
   color: var(--accent-color);
   font-family: inherit;
   font-weight: var(--font-weight-regular);
@@ -160,7 +179,21 @@ section:not(:last-of-type){
 .text__link{
   color: inherit;
   text-shadow: 2px 2px 0 var(--accent-color);
+  text-decoration: none;
 }
+
+.text__link:hover{
+  border-block-end: 1px solid var(--text-color);
+}
+
+.text__link:focus{
+  outline: none;
+}
+
+.text__link:focus-visible{
+  outline: 1px solid var(--text-color);
+}
+
 
 .grid{
   grid-template-columns: 315px 1fr;
@@ -279,31 +312,49 @@ section:not(:last-of-type){
   .harm{
     grid-template-rows: repeat(4, min-content);
   }
-  .harm__title{
-  }
   .harm__block{
     grid-row: auto;
     grid-column: 1/4;
   }
 }
 
-@media (max-width: 320px){
+@media (max-width: 748px){
+  .pictures__cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .pictures__title {
+    margin-block-end: 10px;
+  }
+  
+}
+
+@media (max-width: 475px){
+  .harm__title{
+    grid-column: 1/4;
+  }
+  .advices__title-default{
+    grid-row: 1/2;
+  }
+  .grid{
+    grid-template-columns: 1fr;
+  }
+
   .header__title{
     margin-inline-start: 0;
   }
   .header__description{
     width: 100%;
   }
-  .grid{
-    grid-template-columns: auto;
-  }
+  
   .main{
     padding-block: 40px;
   }
   section:not(:last-of-type){
     padding-block-end: 50px;
   }
-  .harm__title{
-    grid-column: 1/4;
-  }
+
 }
+
+
