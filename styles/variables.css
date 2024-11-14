@@ -22,6 +22,7 @@
   --line-height: 1.3em;
   --padding-inline: 20px;
   --padding-block: 20px;
+  --background-image: url(../images/cover-image-dark.png);
 }
 
 @media (max-width: 475px) {
