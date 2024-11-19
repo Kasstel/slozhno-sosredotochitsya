@@ -25,15 +25,11 @@
   --background-image: url(../images/cover-image-dark.png);
 }
 
-@media (max-width: 475px) {
+@media (max-width: 748px) {
   :root {
     --padding-inline: 10px;
     --padding-block: 10px;
-  }
-}
-
-@media (max-width: 320px) {
-  :root {
     --focus-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
+
