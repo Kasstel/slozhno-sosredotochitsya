@@ -307,9 +307,6 @@ section:not(:last-of-type) {
 }
 
 @media (max-width: 748px) {
-  .advices__block {
-    grid-column: 1/-1;
-  }
   .pictures__cards {
     display: flex;
     flex-direction: column;
@@ -333,6 +330,7 @@ section:not(:last-of-type) {
   }
   .advices__block {
     margin-inline-start: 0;
+    grid-column: 1/-1;
   }
   .header__title {
     margin-inline-start: 0;
