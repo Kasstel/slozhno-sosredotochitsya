@@ -30,7 +30,6 @@
   font-weight: var(--font-weight-bold);
 }
 
-
 .title-decor {
   background-color: var(--accent-color);
   color: var(--title-color);
@@ -40,7 +39,7 @@
 .block-paragraph {
   color: var(--text-color);
   font-weight: var(--font-weight-regular);
-  margin-block-start: 10px ;
+  margin-block-start: 10px;
 }
 
 .header {
@@ -173,6 +172,12 @@ section:not(:last-of-type) {
   padding-block-end: 80px;
 }
 
+.section-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
 .text__link {
   color: inherit;
   text-shadow: 2px 2px 0 var(--accent-color);
@@ -191,53 +196,35 @@ section:not(:last-of-type) {
   outline: 1px solid var(--text-color);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.concentration__block{
+.concentration__block {
   grid-column-start: span 2;
-}
-
-.concentration {
-
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .concentration__title {
   grid-row-start: 1;
-  grid-row-end: 3;
 }
-
-
 
 .harm__title {
   grid-column: 1 / 2;
   text-align: start;
 }
 
-.harm__block{
+.harm__block {
   grid-column: 1/-1;
 }
 
-.advices {
-  grid-template-rows: repeat(6, min-content);
-}
-
-.advices__title-additional{
+.advices__title-additional {
   grid-column: 2/-1;
 }
 
-.advices__block{
+.advices__block {
   grid-column: 2/-1;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
-}
-
-.advices__title-default {
-  grid-row-start: 1;
-  grid-row-end: 7;
 }
 
 .advices__block-title {
@@ -308,19 +295,19 @@ section:not(:last-of-type) {
   .header__theme-menu-list {
     flex-direction: column;
   }
-/*
-  .grid {
-    grid-template-columns: 236px 1fr;
+  .advices__block {
+    margin-inline-start: 5px;
   }
-  */
-  .harm__block{
+  .harm__block {
     grid-template-columns: 1fr;
   }
-  
+  .concentration__block {
+    margin-inline-start: 5px;
+  }
 }
 
 @media (max-width: 748px) {
-  .advices__block{
+  .advices__block {
     grid-column: 1/-1;
   }
   .pictures__cards {
@@ -332,22 +319,30 @@ section:not(:last-of-type) {
     margin-block-end: 10px;
   }
   .harm__title {
-    grid-column: 1/4;
+    grid-column: 1/-1;
   }
   .advices__title-default {
     grid-row: 1/2;
   }
-  .grid {
-    grid-template-columns: 1fr;
+  .section-content {
+    grid-template-columns: auto;
+    column-gap: 0;
   }
-
+  .concentration__block {
+    margin-inline-start: 0;
+  }
+  .advices__block {
+    margin-inline-start: 0;
+  }
   .header__title {
     margin-inline-start: 0;
   }
   .header__description {
     width: 100%;
   }
-
+  .concentration__title {
+    grid-column: 1/3;
+  }
   .main {
     padding-block: 40px;
   }
@@ -355,4 +350,3 @@ section:not(:last-of-type) {
     padding-block-end: 50px;
   }
 }
-
